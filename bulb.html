@@ -1,0 +1,32 @@
+<html>
+    <head> 
+        <title> Javascript Bulb Project </title>
+        <link rel="stylesheet" href="bulb.css">
+    </head>
+    <body>
+       <marquee behavior="scroll" direction="wright" scrollamount="15">
+        <b> <i> Javascript Bulb Project </i></b>
+       </marquee>
+       <br> <br>
+        <script>
+            function light(value){
+                var pic;
+                if(value == 0)
+                {
+                    pic="C:\Users\copa\Desktop\html project\bulb2.png";
+                }
+                else
+                {
+                    pic="C:\Users\copa\Desktop\html project\bulb1.png";
+                }
+                document.getElementById('bulb').src=pic;
+            }
+      </script>
+         
+         <img id="bulb" src="C:\Users\copa\Desktop\html project\bulb2.png">
+
+        <br><br>
+        <button onclick="light (1)"> ON </button>
+        <button onclick="light (0)"> OFF </button>
+    </body>
+</html>
