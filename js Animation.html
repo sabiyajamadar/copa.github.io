@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> My First Webpage </title>
+        <h1> Welcome to Javascript Animation </h1>
+        <style>
+            #box{
+                width: 300px;
+                height: 300px;
+                position: relative;
+                background: pink;
+            }
+            #circle{
+                background: yellowgreen;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+      <body>
+        <p> <button onclick="movement()"> click to move </button></p>
+        <div id="box">
+            <div id="circle"> </div>
+        </div>
+        <script type="text/Javascript"> 
+             function movement(){
+                let id = null;
+                const copa = document.getElementById("circle");
+                let pos = 0;
+                 id = setInterval(animate,5);
+                function animate() {
+                    if (pos == 250){
+                        clearInterval(id);
+                    }
+                    else{
+                        pos++;
+                        copa.style.top = pos + "px";
+                        copa.style.right = pos + "px";
+                    }
+                }
+             }
+        </script>
+      </body>
+</html>
