@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+button{
+    padding: 10px;
+    margin: 60px;
+    background-color: grey;
+}
+img{
+    margin-left: 40%;
+    height: 50%;
+}
+marquee{
+    font-size: 70px;
+    font-weight: 600;
+    color: white;
+}
+button{
+    align-items: center;
+    margin-left: 30%;
+}
