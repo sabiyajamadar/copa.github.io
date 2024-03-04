@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="x-ua-compatibal" content="ie=edge">
+        <title> Star Pattern </title>
+        <style>
+            body{
+                color: mediumblue;
+                font-size: 80px;
+                line-height: 0.7;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="display"> </div>
+        <script>
+           let i, j, k, l;
+         for(i=1; i<=5; i++){
+               
+             for(k=1; k<=5-i; k++){
+                document.write("&nbsp;&nbsp;")
+             }
+
+             for(j=1; j<=i; j++){
+                document.write("*");
+            }
+
+             for(l=2; l<=i; l++){
+                document.write("*")
+             }
+             document.write("<br/>");
+         }
+        </script>
+    </body>
+</html>
